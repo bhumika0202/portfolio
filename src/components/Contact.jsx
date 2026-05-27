@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, CheckCircle, AlertCircle } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const formRef = useRef();
@@ -19,28 +18,44 @@ const Contact = () => {
     setFormState(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    // Replace these with your actual EmailJS credentials
-    const SERVICE_ID = 'YOUR_SERVICE_ID';
-    const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-    const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+    try {
+      // Using FormSubmit which doesn't require API keys, just your email
+      const response = await fetch('https://formsubmit.co/ajax/bhumikaparmar.tech@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          subject: formState.subject,
+          message: formState.message,
+          _subject: 'New submission from Portfolio!' // Custom email subject
+        })
+      });
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
-      .then(() => {
+      const result = await response.json();
+      
+      if (result.success) {
         setSubmitStatus('success');
         setFormState({ name: '', email: '', subject: '', message: '' });
-      })
-      .catch((error) => {
-        console.error('EmailJS Error:', error);
+      } else {
+        console.error('FormSubmit Error:', result.message);
         setSubmitStatus('error');
-      })
-      .finally(() => {
-        setIsSubmitting(false);
-        setTimeout(() => setSubmitStatus(null), 5000);
-      });
+      }
+    } catch (error) {
+      console.error('Submission Error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   };
 
   return (
