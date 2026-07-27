@@ -11,40 +11,22 @@ const skillCategories = [
 const skills = [
   // Frontend
   {
-    name: 'HTML5',
-    level: 95,
-    category: 'frontend',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
-  },
-  {
-    name: 'CSS3',
-    level: 95,
-    category: 'frontend',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
-  },
-  {
-    name: 'Javascript',
-    level: 95,
-    category: 'frontend',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-  },
-  {
-    name: 'React',
+    name: 'React.js',
     level: 90,
     category: 'frontend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
-  },
-  {
-    name: 'Redux',
-    level: 70,
-    category: 'frontend',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg'
   },
   {
     name: 'Next.js',
     level: 70,
     category: 'frontend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'
+  },
+  {
+    name: 'Javascript',
+    level: 95,
+    category: 'frontend',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
   },
   {
     name: 'Tailwind CSS',
@@ -57,6 +39,18 @@ const skills = [
     level: 60,
     category: 'frontend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+  },
+  {
+    name: 'HTML5',
+    level: 95,
+    category: 'frontend',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+  },
+  {
+    name: 'CSS3',
+    level: 95,
+    category: 'frontend',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
   },
   // Backend
   {
@@ -71,17 +65,23 @@ const skills = [
     category: 'backend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg'
   },
+  {
+    name: 'RESTful APIs',
+    level: 85,
+    category: 'backend',
+    icon: 'https://img.icons8.com/fluency/96/api.png'
+  },
   // Database
   {
     name: 'MongoDB',
     level: 85,
-    category: 'backend',
+    category: 'database',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'
   },
   {
     name: 'PostgreSQL',
     level: 90,
-    category: 'backend',
+    category: 'database',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
   },
 

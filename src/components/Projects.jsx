@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
@@ -8,7 +8,7 @@ const projects = [
     description: 'A full-stack web application built to streamline project, employee, and purchase management within organizations. It features secure JWT authentication, role-based access control (RBAC), user, department, designation, and company management, along with RESTful APIs, PostgreSQL, and Prisma ORM. The application is designed with a scalable architecture to support multiple user roles and efficient business workflows.',
     tech: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'JWT', 'Multer', 'Cloudinary'],
     demo: '#',
-    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'BookCraft — Book Publisher Platform',

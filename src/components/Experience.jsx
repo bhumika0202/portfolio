@@ -32,8 +32,8 @@ const Experience = () => {
     {
       title: 'Bachelor of Computer Applications (BCA)',
       company: 'Saurashtra University | Kamani Science & Prataprai Arts College',
-      period: 'Graduated with 71.97%',
-      description: ['Focused on core computer science subjects, programming fundamentals, and database management.'],
+      period: '2022 - 2025',
+      description: ['Graduated with 7.9 CGPA', 'Focused on core computer science subjects, programming fundamentals, and database management.'],
       type: 'edu'
     }
   ];
