@@ -9,11 +9,11 @@ const Experience = () => {
       company: 'StackDot, Ahmedabad',
       period: 'Feb 2026 - Present',
       description: [
-        'Building a full-scale Book Publisher Platform with JWT authentication, Role-Based Access Control (RBAC), and file upload functionality using Multer and Cloudinary.',
-        'Developing RESTful APIs using Node.js and Express.js with PostgreSQL and Prisma ORM for schema modeling and query optimization.',
-        'Implementing request validation using Joi and following clean architecture with separated controllers, services, middleware, and routes.',
-        'Participating in code reviews and following structured software development workflows in a professional team environment.',
-        'Gaining hands-on experience in full-stack application architecture, API design, and production-level database management.',
+        'Contributing to the development of a Purchase & Payment Management System (PPMS), an enterprise web application for managing users, departments, roles, purchases, and payments.',
+        'Building responsive React.js interfaces and integrating them with secure RESTful APIs developed using Node.js, Express.js, PostgreSQL, and Prisma ORM.',
+        'Implementing JWT authentication and Role-Based Access Control (RBAC) to provide secure, role-based access across multiple user types.',
+        'Developing CRUD operations, search, filtering, pagination, and form validation while optimizing database queries with Prisma ORM.',
+        'Collaborating with the development team through Git workflows, code reviews, debugging, and Agile development practices.'
       ],
       type: 'work'
     },

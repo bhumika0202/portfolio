@@ -4,19 +4,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 const skillCategories = [
   { id: 'frontend', name: 'Frontend' },
   { id: 'backend', name: 'Backend' },
+  { id: "database", name: "Database" },
   { id: 'tools', name: 'Tools' },
 ];
 
 const skills = [
   // Frontend
   {
-    name: 'HTML',
+    name: 'HTML5',
     level: 95,
     category: 'frontend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
   },
   {
-    name: 'CSS',
+    name: 'CSS3',
     level: 95,
     category: 'frontend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
@@ -70,6 +71,7 @@ const skills = [
     category: 'backend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg'
   },
+  // Database
   {
     name: 'MongoDB',
     level: 85,
@@ -78,19 +80,33 @@ const skills = [
   },
   {
     name: 'PostgreSQL',
-    level: 80,
+    level: 90,
     category: 'backend',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
   },
+
+  {
+    name: 'Mysql',
+    level: 80,
+    category: 'database',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
+  },
+
   // Tools
   {
-    name: 'Vite',
-    level: 85,
+    name: 'Git',
+    level: 95,
     category: 'tools',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg'
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
   },
   {
-    name: 'vercel',
+    name: 'GitHub',
+    level: 95,
+    category: 'tools',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
+  },
+  {
+    name: 'Vercel',
     level: 90,
     category: 'tools',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg'
@@ -100,7 +116,13 @@ const skills = [
     level: 85,
     category: 'tools',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg'
-  }
+  },
+  {
+    name: 'Docker',
+    level: 60,
+    category: 'tools',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'
+  },
 ];
 
 const Skills = () => {
@@ -129,8 +151,8 @@ const Skills = () => {
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
               className={`px-6 py-2 rounded-full text-base font-medium transition-all duration-300 ${activeCategory === cat.id
-                  ? 'bg-sky-500 text-white shadow-[0_0_20px_rgba(14,165,233,0.4)]'
-                  : 'text-[var(--text-secondary)] hover:text-sky-500'
+                ? 'bg-sky-500 text-white shadow-[0_0_20px_rgba(14,165,233,0.4)]'
+                : 'text-[var(--text-secondary)] hover:text-sky-500'
                 }`}
             >
               {cat.name}

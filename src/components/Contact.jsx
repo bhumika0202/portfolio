@@ -41,7 +41,7 @@ const Contact = () => {
       });
 
       const result = await response.json();
-      
+
       if (result.success) {
         setSubmitStatus('success');
         setFormState({ name: '', email: '', subject: '', message: '' });
@@ -163,7 +163,7 @@ const Contact = () => {
                     required
                     value={formState.name}
                     onChange={handleChange}
-                    placeholder="John Doe"
+                    placeholder="FirstName LastName"
                     className="w-full px-6 py-4 rounded-2xl bg-[var(--bg-color)] border border-[var(--border-color)] focus:border-sky-500 focus:outline-none text-[var(--text-color)] transition-all"
                   />
                 </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                     required
                     value={formState.email}
                     onChange={handleChange}
-                    placeholder="john@example.com"
+                    placeholder="abc@example.com"
                     className="w-full px-6 py-4 rounded-2xl bg-[var(--bg-color)] border border-[var(--border-color)] focus:border-sky-500 focus:outline-none text-[var(--text-color)] transition-all"
                   />
                 </div>

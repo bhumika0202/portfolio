@@ -1,8 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const projects = [
+  {
+    title: 'Purchase & Payment Management System(PPMS)',
+    description: 'A full-stack web application built to streamline project, employee, and purchase management within organizations. It features secure JWT authentication, role-based access control (RBAC), user, department, designation, and company management, along with RESTful APIs, PostgreSQL, and Prisma ORM. The application is designed with a scalable architecture to support multiple user roles and efficient business workflows.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'JWT', 'Multer', 'Cloudinary'],
+    demo: '#',
+    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=800',
+  },
   {
     title: 'BookCraft — Book Publisher Platform',
     description: 'A full-scale backend REST API for a book publishing platform built with Node.js and Express.js. Features JWT authentication, Role-Based Access Control (RBAC), complete book/user/order management, cart and payment workflows, and file uploads via Multer and Cloudinary. Built with PostgreSQL and Prisma ORM for schema modeling and query optimization.',
